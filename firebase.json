@@ -1,0 +1,26 @@
+{
+  "hosting": {
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "redirects": [ {
+      "source": "/discord",
+      "destination": "https://discord.gg/chinchoo",
+      "type": 302
+      },
+      {
+      "source": "/twitch",
+      "destination": "https://twitch.tv/chinchoo",
+      "type": 302
+      },
+      {
+      "source": "/youtube",
+      "destination": "https://www.youtube.com/user/chinchoo13",
+      "type": 302
+      }
+    ]
+  }
+}
