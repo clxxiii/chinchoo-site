@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Jura:wght@300&family=Poiret+One&family=Varela+Round&display=swap');
 
 :root {
-    --animation-time: 3s
+    --animation-time: 0s
 }
 
 html {
@@ -45,7 +45,9 @@ body {
     transform: translateY(-100%);
     animation: onOpenLogo var(--animation-time) ease-in-out;
 }
-
+#twitch-chat-embed {
+    z-index: 110
+}
 .content {
     position: relative;
     display: flex;
@@ -61,6 +63,7 @@ section {
     width: 100%;
     height: 100%;
     overflow: hidden;
+    z-index: 100;
 }
 
 h1 {
@@ -72,11 +75,10 @@ h1 {
     color: white;
     font-family: 'Jura', sans-serif;
     text-transform: uppercase;
-    z-index: 11;
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 101
+    z-index: 99
 }
 
 .title .img {
@@ -183,7 +185,6 @@ iframe {
 
 .socials {
     display: flex;
-    width: 300px;
     gap: 20px;
     z-index: 15
 }
@@ -349,13 +350,16 @@ nav a {
     nav a {
         font-size: 20px
     }
+    .title {
+        top: 0;
+    }
     #home .title {
         top: 0;
         height: 100vh;
         white-space: normal;
     }
     section {
-        height: 100vh
+        height: 100
     }
     body {
         overflow-y:hidden;
@@ -372,18 +376,18 @@ nav a {
     .about-container {
         flex-direction: column;
         height: 100vh;
+        font-size: 12px;
         justify-content: center;
     }
     .about-container .title {
-        height: 150px
+        height: 50px
     }
     .about-container div {
-        height: 30vh;
+        height: 37vh;
         width: 100vw;
     }
     .about-container img {
-        width: 100px;
-        height: 100px;
+        height: 0;
     }
     nav, .socials {
         transform: scale(0.6);
