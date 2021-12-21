@@ -8,6 +8,16 @@
     ],
     "redirects": [ 
       {
+      "source": "/skins",
+      "destination": "https://docs.google.com/document/d/1fjXumK5E36YqJl_j3CR7fz0KeboNR1EuMa6H7GMeHPI/edit?usp=sharing",
+      "type": 302
+      },
+      {
+      "source": "/tourney",
+      "destination": "https://docs.google.com/document/d/1fjXumK5E36YqJl_j3CR7fz0KeboNR1EuMa6H7GMeHPI/edit?usp=sharing",
+      "type": 302
+      },
+      {
       "source": "/twitch",
       "destination": "https://twitch.tv/chinchoo",
       "type": 302
