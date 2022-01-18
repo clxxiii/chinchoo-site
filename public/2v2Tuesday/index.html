@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="deps/countUp.js"></script>
+    <script src="deps/reconnecting-websocket.min.js"></script>
+</head>
+
+<body>
+    <div id="main">
+		<div id="top">
+			<div id="teamRed">Red Team</div>
+			<div id="scoreRed">0</div>
+      <div id=logo></div>
+			<div id="scoreBlue">0</div>
+			<div id="teamBlue">Blue Team</div>
+    </div>
+    <div id="streamLabels">
+      <div id="recentFollower">
+        <div id="labelBox"></div>
+      </div>
+      <div id="recentSubscriber">
+        <div id="labelBox"></div>
+      </div>
+      <div id="recentDonation">
+        <div id="labelBox"></div>
+      </div>
+      <div id="recentCheer">
+        <div id="labelBox"></div>
+      </div>
+    </div>
+    <div id="twitchChat">
+      <iframe src="https://www.giambaj.it/twitch/jchat/v2/?channel=chinchoo&animate=true&bots=true&size=1&font=0&shadow=1"></iframe>
+    </div>
+    <div id="right-bg-blocker"></div>
+    <div id="player-container">
+      <div id="red-team-container">
+        <div class="team-title">Red Team</div>
+        <div class="player">
+          <div class="profile-pic"></div>
+          <div class="username"></div>
+          <div class="rank"></div>
+        </div>
+        <div class="player">
+          <div class="profile-pic"></div>
+          <div class="username"></div>
+          <div class="rank"></div>
+        </div>
+      </div>
+      <div id="vs">VS.</div>
+      <div id="blue-team-container">
+        <div class="team-title">Blue Team</div>
+        <div class="player">
+          <div class="profile-pic"></div>
+          <div class="username"></div>
+          <div class="rank"></div>
+        </div>
+        <div class="player">
+          <div class="profile-pic"></div>
+          <div class="username"></div>
+          <div class="rank"></div>
+        </div>
+      </div>
+    </div>
+    <div id="left-bg-blocker"></div>
+		<div id="bottom">
+			<div id="chats"></div>
+      <div id="osuChatText">Game Chat</div>
+			<div id="playScoreRed"></div>
+			<div id="playScoreBlue"></div>
+			<div id="nowPlayingContainer">
+				<div id="nowPlayingText">Now Playing</div>
+				<div id="mapContainer">
+					<div id="overlay"></div>
+					<div id="mapTitle"></div>
+					<div id="mapDifficulty"></div>
+				</div>
+      </div>
+		</div>
+    <div id="statsCont">
+      <div class="stat-box">
+        CS
+        <div id="csDisp"></div>
+    </div>
+      <div class="stat-box">
+        OD
+        <div id="odDisp"></div>
+    </div>
+      <div class="stat-box">
+        AR
+        <div id="arDisp"></div>
+    </div>
+      <div class="stat-box">
+        HP
+        <div id="hpDisp"></div>
+    </div>
+    </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

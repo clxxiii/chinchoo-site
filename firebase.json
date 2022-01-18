@@ -6,7 +6,7 @@
       "**/.*",
       "**/node_modules/**"
     ],
-    "redirects": [ 
+    "redirects": [
       {
       "source": "/skins",
       "destination": "https://docs.google.com/document/d/1fjXumK5E36YqJl_j3CR7fz0KeboNR1EuMa6H7GMeHPI/edit?usp=sharing",
@@ -14,7 +14,7 @@
       },
       {
       "source": "/tourney",
-      "destination": "https://docs.google.com/document/d/1fjXumK5E36YqJl_j3CR7fz0KeboNR1EuMa6H7GMeHPI/edit?usp=sharing",
+      "destination": "https://docs.google.com/spreadsheets/d/15SrnE5vLWdD4LLMKf_MpPfYXkKE9yDDMf1hIlerOeM0",
       "type": 302
       },
       {
@@ -76,7 +76,7 @@
       "source": "/facebook",
       "destination": "https://www.facebook.com/Chinchoo-112161053502961",
       "type": 302
-      }
+    }
     ]
   }
 }
