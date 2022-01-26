@@ -1,6 +1,9 @@
 let socket = new ReconnectingWebSocket("ws://127.0.0.1:24050/ws");
 let mapid = document.getElementById("mapid");
 
+//EVERYTHING
+let main = document.getElementById("main");
+
 // NOW PLAYING
 let title = document.getElementById("title");
 let mapContainer = document.getElementById("mapContainer");
@@ -66,10 +69,6 @@ socket.onclose = (event) => {
 	socket.send("Client Closed!");
 };
 
-socket.onerror = (error) => {
-	console.log("Socket Error: ", error);
-};
-
 let bestOfTemp;
 let scoreVisibleTemp;
 let starsVisibleTemp;
@@ -99,7 +98,6 @@ let player4NameTemp;
 
 let chatLen = 0;
 let tempClass = "unknown";
-
 socket.onmessage = (event) => {
 	let data = JSON.parse(event.data);
 	if (scoreVisibleTemp !== data.tourney.manager.bools.scoreVisible) {
@@ -304,8 +302,8 @@ socket.onmessage = (event) => {
 				chatText.setAttribute("class", "chatText");
 
 				chatTime.innerText = data.tourney.manager.chat[i].time;
-				chatName.innerText = data.tourney.manager.chat[i].name + ":\xa0";
-				chatText.innerText = data.tourney.manager.chat[i].messageBody;
+				chatName.innerText = data.tourney.manager.chat[i].name;
+				chatText.innerText = ":\xa0" + data.tourney.manager.chat[i].messageBody;
 
 				chatName.classList.add(tempClass);
 
