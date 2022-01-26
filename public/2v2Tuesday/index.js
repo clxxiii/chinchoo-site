@@ -3,6 +3,7 @@ let mapid = document.getElementById("mapid");
 
 //EVERYTHING
 let main = document.getElementById("main");
+let error = document.getElementById("error");
 
 // NOW PLAYING
 let title = document.getElementById("title");
@@ -98,7 +99,13 @@ let player4NameTemp;
 
 let chatLen = 0;
 let tempClass = "unknown";
+socket.onerror = (event) => {
+	main.style.opacity = 0;
+	error.style.opacity = 1;
+};
 socket.onmessage = (event) => {
+	main.style.opacity = 1;
+	error.style.opacity = 0;
 	let data = JSON.parse(event.data);
 	if (scoreVisibleTemp !== data.tourney.manager.bools.scoreVisible) {
 		scoreVisibleTemp = data.tourney.manager.bools.scoreVisible;
