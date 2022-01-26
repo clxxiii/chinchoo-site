@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Jura:wght@300&family=Major+Mono+Display&family=Nanum+Gothic&family=Poiret+One&family=Poppins:ital,wght@0,100;0,400;1,100;1,400&family=Roboto&family=Ubuntu:wght@500&family=Varela&family=Varela+Round&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Jura:wght@300&family=Major+Mono+Display&family=Nanum+Gothic&family=Nunito:wght@300;400;700&family=Poiret+One&family=Poppins:ital,wght@0,100;0,400;1,100;1,400&family=Roboto&family=Ubuntu:wght@500&family=Varela&family=Varela+Round&display=swap");
 body,
 html {
 	padding: 0;
@@ -13,6 +12,7 @@ html {
 	color: white;
 	width: 1920px;
 	height: 1080px;
+	overflow: hidden;
 	position: relative;
 	text-shadow: 0px 0px 10px black;
 }
@@ -34,6 +34,7 @@ html {
 	justify-content: space-evenly;
 	align-items: center;
 	width: 1920px;
+	font-weight: 700;
 	height: 202px;
 	background-image: url("../static/top.svg");
 	background-repeat: no-repeat;
@@ -45,10 +46,15 @@ html {
 #teamRed,
 #teamBlue {
 	border-radius: 50px;
-	padding: 10px 100px 10px 100px;
+	padding: 10px 0px;
 	box-shadow: 0 5px 7px black;
 	background-color: #fe006f;
 	height: 75px;
+	width: 35%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-align: center;
 	font-size: 50px;
 	font-weight: 600;
 	color: #ffffff;
@@ -67,15 +73,15 @@ html {
 	width: 150px;
 }
 
-#logo::after {
+#title {
 	position: absolute;
-	bottom: -30px;
+	top: 160px;
 	width: 100%;
 	white-space: nowrap;
+	font-weight: bold;
 	display: flex;
 	justify-content: center;
 	font-size: 24px;
-	content: "CHINCHOO 2v2s";
 }
 
 #scoreRed,
@@ -107,6 +113,7 @@ html {
 
 #twitchChat::before {
 	content: "Twitch Chat";
+	font-weight: 300;
 	position: relative;
 	text-align: center;
 	top: -20px;
@@ -187,7 +194,6 @@ html {
 	/* background-color: rgba(0,0,0,0.90); */
 	transition: transform 1s ease-in-out;
 }
-
 #red-team-container,
 #blue-team-container {
 	background-color: #ac004a;
@@ -206,8 +212,13 @@ html {
 
 .team-title {
 	height: 0px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	width: 100%;
+	height: 50px;
 	text-align: center;
-	font-size: 48px;
+	font-size: 32px;
 }
 #vs {
 	width: 30px;
@@ -268,23 +279,25 @@ html {
 }
 
 #statsCont {
-	position: absolute;
+	position: relative;
 	text-align: center;
 	display: flex;
 	color: white;
+	width: 50%;
+	margin-top: 20px;
+	border-radius: 10px;
+	border: solid white 2px;
+	padding: 5px;
 	flex-direction: row;
-	justify-content: space-between;
-	bottom: 200px;
-	left: 30px;
-	width: 400px;
+	justify-content: left;
 	text-shadow: 0px 0px 5px black;
 	transition: ease-in-out 500ms;
 }
 .stat-box {
-	background: linear-gradient(90deg, #fe006f 0%, #57007f 100%);
 	border-radius: 10px;
-	width: 20%;
-	box-shadow: 0px 4px 10px black;
+	width: 25%;
+	padding: 0 5px;
+	font-size: 24px;
 }
 #statsText {
 	position: absolute;
@@ -313,16 +326,24 @@ html {
 
 #nowPlayingContainer {
 	position: absolute;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 	left: 30px;
 	bottom: 30px;
 	width: 400px;
-	height: 150px;
+	height: 250px;
+	overflow: hidden;
+	border-radius: 20px;
 	text-align: center;
 	align-content: center;
 }
 
 #nowPlayingText {
-	position: relative;
+	position: absolute;
+	left: 77px;
+	bottom: 380px;
 	padding: 5px 20px 5px 20px;
 	margin: 2px 50px 0px 50px;
 	margin-bottom: -10px;
@@ -336,6 +357,7 @@ html {
 #playScoreRed {
 	position: absolute;
 	padding: 5px 30px 5px 30px;
+	/* border: inset 4px rgba(255, 255, 255, 0.25); */
 	text-align: center;
 	border-radius: 50px;
 	left: 500px;
@@ -344,10 +366,11 @@ html {
 	padding-left: 15px;
 	padding-right: 15px;
 	width: 400px;
-	background-color: #fe006f;
+	background-color: rgba(0, 0, 0, 0.25);
 	color: white;
-	font-family: Nunito;
-	font-size: 40px;
+	font-family: "Nunito";
+	font-weight: 700;
+	font-size: 50px;
 	line-height: 60px;
 	display: block;
 	transition: ease-in-out 100ms;
@@ -355,6 +378,7 @@ html {
 #playScoreBlue {
 	position: absolute;
 	padding: 5px 30px 5px 30px;
+	/* border: inset 4px rgba(255, 255, 255, 0.25); */
 	text-align: center;
 	border-radius: 50px;
 	right: 500px;
@@ -363,43 +387,50 @@ html {
 	padding-left: 15px;
 	padding-right: 15px;
 	width: 400px;
-	background-color: #57007f;
+	background-color: rgba(0, 0, 0, 0.25);
 	color: white;
-	font-family: Nunito;
-	font-size: 40px;
+	font-family: "Nunito";
+	font-weight: 700;
+	font-size: 50px;
 	line-height: 60px;
 	display: block;
 	transition: ease-in-out 100ms;
 }
 #mapContainer {
-	position: relative;
+	position: absolute;
+	top: 0;
+	left: 0;
 	padding-top: 20px;
-	height: 100px;
-	width: 100%;
+	height: 100%;
+	width: 400px;
 	background-color: black;
 	background-size: cover;
+	filter: blur(5px);
 	border-radius: 25px;
 	z-index: -1;
 	box-shadow: 0px 0px 20px -3px black;
 }
 #overlay {
-	position: fixed;
-	transform: translateY(-20px);
-	height: 120px;
-	width: 400px;
+	position: absolute;
+	top: 0;
+	height: 100%;
+	width: 100%;
 	z-index: 0;
-	background-color: rgba(0, 0, 0, 0.5);
-	border-radius: 25px;
+	background-color: rgba(0, 0, 0, 0.25);
 }
 #mapTitle,
-#mapDifficulty {
+#mapDifficulty,
+#mapArtist {
 	position: relative;
-	padding-left: 5%;
-	width: 90%;
 	white-space: nowrap;
+	width: 95%;
 	overflow: hidden;
 	text-overflow: ellipsis;
 	z-index: 0;
+}
+
+#mapArtist {
+	font-weight: bold;
 }
 #osuChatText {
 	position: absolute;
@@ -423,7 +454,7 @@ html {
 	padding: 10px 15px;
 	font-size: 18px;
 	box-shadow: 0px 0px 20px -3px black;
-	font-family: Nunito-sb, monospace;
+	font-family: "Roboto", sans-serif;
 	transition: ease-in-out 500ms;
 }
 
