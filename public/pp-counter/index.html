@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>pp counter</title>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="deps/style.css" />
+		<link rel="stylesheet" href="deps/odometr.css" />
+	</head>
+
+	<body>
+		<div id="overlay">
+			<div id="metadata">
+				<img class="bg" />
+				<div class="string-container">
+					<div id="metadata-string"></div>
+				</div>
+				<div class="metadata-stats">
+					<div id="metadata-stars"></div>
+					<div id="metadata-csar"></div>
+					<div id="metadata-odhp"></div>
+					<div id="metadata-bpm"></div>
+				</div>
+				<div id="metadata-map">
+					<span class="metadata-map-b">b/</span>
+					<span class="odometer" id="metadata-map-id"></span>
+				</div>
+			</div>
+			<div class="UR-wrap">
+				<div id="UR">100.00</div>
+			</div>
+			<div class="hits-wrap">
+				<div id="hits">
+					<img class="bg" />
+					<div
+						class="odometer"
+						style="--background-color: #62c25b"
+						id="hits100"
+					>
+						1
+					</div>
+					<div
+						class="odometer"
+						style="--background-color: #ded828"
+						id="hits50"
+					>
+						2
+					</div>
+					<div
+						class="odometer"
+						style="--background-color: #c24f4f"
+						id="hits0"
+					>
+						3
+					</div>
+				</div>
+			</div>
+			<div class="pp-wrap">
+				<div id="pp">
+					<img class="bg" style="z-index: -1" />
+					<span id="pp-string" />
+				</div>
+			</div>
+			<div class="grade-wrap">
+				<div id="grade">
+					<img class="bg" style="z-index: -1" />
+					<div id="grade-text"></div>
+				</div>
+			</div>
+		</div>
+		<!-- <img id="chin-ref" /> -->
+		<script src="deps/reconnecting-websocket.min.js"></script>
+		<script src="deps/countUp.js"></script>
+		<script src="deps/odometr.js"></script>
+		<script src="index.js"></script>
+	</body>
+</html>

@@ -1,0 +1,19 @@
+@font-face {
+	font-family: Nunito-SemiBold;
+	src: url("deps/Nunito-SemiBold.ttf");
+}
+* {
+	padding: 0;
+	margin: 0;
+}
+#ur,
+#label {
+	opacity: 0;
+	font-size: 64px;
+	transition: 300ms ease-in-out;
+	color: white;
+	font-family: "Nunito-SemiBold";
+	text-align: center;
+	height: 100px;
+	width: 300px;
+}

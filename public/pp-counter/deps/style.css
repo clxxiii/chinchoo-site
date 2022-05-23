@@ -1,0 +1,253 @@
+@font-face {
+	font-family: "GothicB";
+	src: url("./fonts/GOTHICB.TTF");
+}
+
+@font-face {
+	font-family: "Fira-SemiBold";
+	src: url("./fonts/FiraCode-SemiBold.ttf");
+}
+
+@font-face {
+	font-family: "Nunito-Bold";
+	src: url("./fonts/Nunito-Bold.ttf");
+}
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+:root {
+	--element-background: #2e1d43;
+}
+
+#chin-ref {
+	width: 1920px;
+	height: 1080px;
+	z-index: -2;
+}
+
+#overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 1920px;
+	height: 1080px;
+	font-family: Nunito-Bold;
+	overflow: hidden;
+	color: white;
+	z-index: 1;
+}
+
+.bg {
+	position: absolute;
+	width: 100%;
+	min-height: 100%;
+	filter: blur(5px) brightness(0.5);
+	transform: scale(1.2);
+}
+
+#metadata {
+	position: absolute;
+	top: 50px;
+	right: 0px;
+	width: 310px;
+	height: 160px;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	z-index: 0;
+	box-shadow: 0 5px 25px rgba(0, 0, 0, 0.5);
+	overflow: hidden;
+	background-color: var(--element-background);
+	transition: all 0.5s ease-in-out;
+}
+
+#metadata .string-container {
+	position: absolute;
+	bottom: calc(150px - 18px);
+	left: 10px;
+	width: 290px;
+	font-size: 18px;
+	overflow: hidden;
+	white-space: nowrap;
+	z-index: 3;
+	transition: all 0.5s ease-in-out;
+}
+
+#metadata-string {
+	width: max-content;
+	transition: all 0.5s ease-in-out;
+}
+
+#metadata-map {
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+	font-size: 18px;
+	transition: all 0.5s ease-in-out;
+}
+
+#metadata-map-id {
+	transform: translate(-3px, -1px);
+	font-family: Nunito-Bold;
+}
+
+.metadata-stats {
+	position: absolute;
+	bottom: 42px;
+	left: 25px;
+	font-size: 16px;
+	transition: all 0.5s ease-in-out;
+}
+
+.over {
+	transform: translate(300px);
+	animation: over 5s cubic-bezier(0.18, 0, 0.76, 0.97) infinite;
+}
+
+.UR-wrap {
+	position: absolute;
+	bottom: 195px;
+	left: 550px;
+	width: 495px;
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	overflow: hidden;
+}
+
+#UR {
+	height: 50px;
+	padding: 5px;
+	display: flex;
+	border-radius: 10px;
+	justify-content: center;
+	align-items: center;
+	font-size: 24px;
+	transition: all 0.5s ease-in-out;
+}
+
+.hits-wrap {
+	position: absolute;
+	bottom: 195px;
+	left: 240px;
+	width: 300px;
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	overflow: hidden;
+}
+
+#hits {
+	width: 275px;
+	height: 75px;
+	background-color: var(--element-background);
+	border-radius: 20px;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+	display: flex;
+	overflow: hidden;
+	justify-content: space-evenly;
+	align-items: center;
+	transition: all 0.5s ease-in-out 100ms;
+}
+
+#hits0,
+#hits50,
+#hits100 {
+	min-width: 50px;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 24px;
+	font-family: Nunito-Bold;
+	white-space: nowrap;
+	border-radius: 10px;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+	background-color: var(--background-color);
+}
+
+.pp-wrap {
+	position: absolute;
+	top: 26px;
+	left: 492px;
+	height: 125px;
+	width: 200px;
+	margin-left: 200px;
+	font-family: Nunito-Bold;
+	color: white;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#pp {
+	position: absolute;
+	width: 125px;
+	height: 75px;
+	display: flex;
+	border-radius: 25px;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+	font-size: 30px;
+	transition: all 0.5s ease-in-out 300ms;
+}
+
+#pp-string {
+	font-family: Nunito-Bold;
+}
+
+#pp::after {
+	content: "pp";
+	transform: translate(2px, -3px);
+}
+
+.grade-wrap {
+	position: absolute;
+	top: 125px;
+	left: 22px;
+	height: 150px;
+	width: 200px;
+	color: white;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#grade {
+	position: absolute;
+	width: 125px;
+	height: 125px;
+	display: flex;
+	border-radius: 25px;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+	font-size: 64px;
+	transition: all 0.5s ease-in-out 200ms;
+}
+
+#grade-text {
+	transition: color 300ms ease-in-out;
+}
+
+@keyframes over {
+	0% {
+		transform: translate(0px);
+	}
+	15% {
+		transform: translate(0px);
+	}
+	85% {
+		transform: translate(calc(-100% + 290px));
+	}
+	100% {
+		transform: translate(calc(-100% + 290px));
+	}
+}
