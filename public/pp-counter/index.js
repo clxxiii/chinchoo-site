@@ -129,7 +129,10 @@ socket.onmessage = (event) => {
 			}
 		}
 
-		if (temp.ur != data.gameplay.hits.unstableRate) {
+		if (
+			temp.ur != data.gameplay.hits.unstableRate &&
+			data.menu.state == 2
+		) {
 			temp.ur = data.gameplay.hits.unstableRate;
 			urCount.update(data.gameplay.hits.unstableRate);
 		}
@@ -149,7 +152,7 @@ socket.onmessage = (event) => {
 			hits100.textContent = temp.hits[100];
 		}
 
-		if (temp.pp != data.gameplay.pp.current) {
+		if (temp.pp != data.gameplay.pp.current && data.menu.state == 2) {
 			temp.pp = data.gameplay.pp.current;
 			ppString.textContent = data.gameplay.pp.current;
 		}
@@ -216,25 +219,23 @@ socket.onmessage = (event) => {
 				metadata.style.width = "310px";
 			}
 
-			if (temp.state == 2 || temp.state == 7 || temp.state == 14) {
-				ur.style.transform = "translateY(0px)";
-				hits.style.transform = "translateY(0px)";
-			} else {
-				ur.style.transform = "translateY(125px)";
-				hits.style.transform = "translateY(125px)";
-			}
-
 			if (temp.state == 7 || temp.state == 14) {
 				ppBox.style.transform = "translateY(0px) scale(1.3)";
 				grade.style.transform = "translateX(-200px)";
+				hits.style.transform = "translateY(125px)";
+				ur.style.transform = "translateY(0px)";
 				ppBox.style.color = "#AAFFAA";
 			} else if (temp.state == 2) {
 				ppBox.style.transform = "translateY(0px) scale(1)";
 				grade.style.transform = "translateX(0px)";
+				hits.style.transform = "translateY(0px)";
+				ur.style.transform = "translateY(0px)";
 				ppBox.style.color = "#FFFFFF";
 			} else {
 				ppBox.style.transform = "translateY(-125px) scale(1)";
 				grade.style.transform = "translateX(-200px)";
+				hits.style.transform = "translateY(125px)";
+				ur.style.transform = "translateY(125px)";
 				ppBox.style.color = "#FFFFFF";
 			}
 		}
