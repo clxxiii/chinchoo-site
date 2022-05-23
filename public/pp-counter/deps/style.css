@@ -38,6 +38,7 @@
 	overflow: hidden;
 	color: white;
 	z-index: 1;
+	transition: 0.5s ease-in-out;
 }
 
 .bg {
@@ -46,6 +47,36 @@
 	min-height: 100%;
 	filter: blur(5px) brightness(0.5);
 	transform: scale(1.2);
+}
+#error {
+	opacity: 0;
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 1568px;
+	height: 886px;
+	font-size: 36px;
+	color: white;
+	font-family: Nunito-Bold;
+	transition: 0.5s ease-in-out;
+}
+
+.error-text {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.9);
+	padding: 20px;
+	border-radius: 20px;
+	box-shadow: 0 2px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.error-text img {
+	margin-top: 40px;
+	filter: drop-shadow(0 0 10px white);
 }
 
 #metadata {

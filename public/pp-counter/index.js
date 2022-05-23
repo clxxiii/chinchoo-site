@@ -11,6 +11,8 @@ socket.onerror = (error) => console.log("Socket Error: ", error);
 
 let chinRef = document.getElementById("chin-ref");
 let bgs = document.getElementsByClassName("bg");
+let overlay = document.getElementById("overlay");
+let error = document.getElementById("error");
 let metadata = document.getElementById("metadata");
 let metadataString = document.getElementById("metadata-string");
 let metadataMapId = document.getElementById("metadata-map-id");
@@ -84,9 +86,15 @@ let pp = new Odometer({
 	value: 0,
 	format: "(d).dd",
 });
+socket.onerror = () => {
+	overlay.style.opacity = 0;
+	error.style.opacity = 1;
+};
 
 socket.onmessage = (event) => {
 	try {
+		overlay.style.opacity = 1;
+		error.style.opacity = 0;
 		let data = JSON.parse(event.data);
 		if (temp.id != data.menu.bm.id) {
 			temp.id = data.menu.bm.id;
