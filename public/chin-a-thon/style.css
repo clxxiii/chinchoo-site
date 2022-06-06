@@ -1,0 +1,31 @@
+.bg {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+	background-image: url("../src/bg.png");
+	filter: blur(20px) brightness(0.5);
+	transform: scale(1.1);
+	z-index: -1;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+	width: 100vw;
+	height: 100vh;
+}
+
+.svg {
+	width: 50rem;
+	height: 50rem;
+	border-radius: 10%;
+	box-shadow: 0 0 50px 0 rgba(255, 255, 255, 0.5);
+}
