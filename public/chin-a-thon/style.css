@@ -149,6 +149,10 @@ a {
 	height: 100%;
 }
 
+.timer {
+	font-size: 1.5rem;
+}
+
 @media screen and (max-width: 600px) {
 	h1,
 	.footer {

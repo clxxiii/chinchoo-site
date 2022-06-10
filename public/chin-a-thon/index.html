@@ -7,6 +7,7 @@
 		<title>Chin-a-thon</title>
 		<link rel="icon" href="../src/logo.png" />
 		<link rel="stylesheet" href="./style.css" />
+		<link rel="stylesheet" href="../src/odometer.css" />
 	</head>
 	<body>
 		<div class="bg"></div>
@@ -16,6 +17,19 @@
 					>The Second-Ever Chin-a-thon
 				</a>
 			</h1>
+		</div>
+		<h2>Start Date: June 20th, 1pm EST</h2>
+		<div class="timer">
+			<div id="countdown">
+				<span id="days" class="odometer"></span
+				><span class="countdown-text">days</span>
+				<span id="hours" class="odometer"></span
+				><span class="countdown-text">hours</span>
+				<span id="minutes" class="odometer"></span
+				><span class="countdown-text">minutes</span>
+				<span id="seconds" class="odometer"></span
+				><span class="countdown-text">seconds</span>
+			</div>
 		</div>
 		<div class="card-box">
 			<div class="card">
@@ -120,5 +134,7 @@
 			If the stream goes past July 8th, I will have to pause until the
 			18th when I get back from vacation
 		</div>
+		<script src="./index.js"></script>
+		<script src="../src/odometer.js"></script>
 	</body>
 </html>
