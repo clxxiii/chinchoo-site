@@ -1,4 +1,4 @@
-let tasksDone = 5;
+let tasksDone = 1;
 
 let taskList = document.getElementsByClassName("goals")[0];
 console.log(taskList.rows);
