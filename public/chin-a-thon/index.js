@@ -1,25 +1,15 @@
-// Set the date we're counting down to
-var countDownDate = new Date("Jun 20 2022 17:00:00 UTC");
+let tasksDone = 5;
 
-// Update the count down every 1 second
-var x = setInterval(function () {
-	// Get today's date and time
-	var now = new Date().getTime();
+let taskList = document.getElementsByClassName("goals")[0];
+console.log(taskList.rows);
+addDoneClasses();
 
-	// Find the distance between now and the count down date
-	var distance = countDownDate - now;
-	// Time calculations for days, hours, minutes and seconds
-	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-	var hours = Math.floor(
-		(distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-	);
-	var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-	// Display the result in the countdown elements
-	document.getElementById("days").innerHTML = days;
-	document.getElementById("hours").innerHTML = hours;
-	document.getElementById("minutes").innerHTML = minutes;
-	document.getElementById("seconds").innerHTML = seconds;
-	// If the count down is finished, write some text
-}, 1000);
+async function addDoneClasses() {
+	for (let i = 1; i <= tasksDone; i++) {
+		await new Promise((resolve) => {
+			setTimeout(resolve, 250);
+		});
+		let task = taskList.rows[i - 1];
+		task.classList.add("done");
+	}
+}
