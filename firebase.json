@@ -8,75 +8,90 @@
     ],
     "redirects": [
       {
-      "source": "/skins",
-      "destination": "https://docs.google.com/document/d/1fjXumK5E36YqJl_j3CR7fz0KeboNR1EuMa6H7GMeHPI/edit?usp=sharing",
-      "type": 302
+        "source": "/skins",
+        "destination": "https://docs.google.com/document/d/1fjXumK5E36YqJl_j3CR7fz0KeboNR1EuMa6H7GMeHPI/edit?usp=sharing",
+        "type": 302
       },
       {
-      "source": "/tourney",
-      "destination": "https://docs.google.com/spreadsheets/d/15SrnE5vLWdD4LLMKf_MpPfYXkKE9yDDMf1hIlerOeM0",
-      "type": 302
+        "source": "/tourney",
+        "destination": "https://docs.google.com/spreadsheets/d/15SrnE5vLWdD4LLMKf_MpPfYXkKE9yDDMf1hIlerOeM0",
+        "type": 302
       },
       {
-      "source": "/twitch",
-      "destination": "https://twitch.tv/chinchoo",
-      "type": 302
+        "source": "/twitch",
+        "destination": "https://twitch.tv/chinchoo",
+        "type": 302
       },
       {
-      "source": "/discord",
-      "destination": "https://discord.gg/chinchoo",
-      "type": 302
+        "source": "/discord",
+        "destination": "https://discord.gg/chinchoo",
+        "type": 302
       },
       {
-      "source": "/tiktok",
-      "destination": "https://www.tiktok.com/@chinchoo13",
-      "type": 302
+        "source": "/tiktok",
+        "destination": "https://www.tiktok.com/@chinchoo13",
+        "type": 302
       },
       {
-      "source": "/youtube",
-      "destination": "https://www.youtube.com/user/chinchoo13",
-      "type": 302
+        "source": "/youtube",
+        "destination": "https://www.youtube.com/user/chinchoo13",
+        "type": 302
       },
       {
-      "source": "/instagram",
-      "destination": "https://www.instagram.com/chinchoo13/",
-      "type": 302
+        "source": "/instagram",
+        "destination": "https://www.instagram.com/chinchoo13/",
+        "type": 302
       },
       {
-      "source": "/setup",
-      "destination": "https://kit.co/Chinchoo",
-      "type": 302
+        "source": "/setup",
+        "destination": "https://kit.co/Chinchoo",
+        "type": 302
       },
       {
-      "source": "/merch",
-      "destination": "https://chinchoos-merch.creator-spring.com/",
-      "type": 302
+        "source": "/merch",
+        "destination": "https://chinchoos-merch.creator-spring.com/",
+        "type": 302
       },
       {
-      "source": "/twitter",
-      "destination": "https://twitter.com/chinchoo13",
-      "type": 302
+        "source": "/twitter",
+        "destination": "https://twitter.com/chinchoo13",
+        "type": 302
       },
       {
-      "source": "/osu",
-      "destination": "https://osu.ppy.sh/users/17289686",
-      "type": 302
+        "source": "/osu",
+        "destination": "https://osu.ppy.sh/users/17289686",
+        "type": 302
       },
       {
-      "source": "/mal",
-      "destination": "https://myanimelist.net/profile/Chinchoo13",
-      "type": 302
+        "source": "/mal",
+        "destination": "https://myanimelist.net/profile/Chinchoo13",
+        "type": 302
       },
       {
-      "source": "/op-twitter",
-      "destination": "https://twitter.com/Omniprodigies",
-      "type": 302
+        "source": "/op-twitter",
+        "destination": "https://twitter.com/Omniprodigies",
+        "type": 302
       },
       {
-      "source": "/facebook",
-      "destination": "https://www.facebook.com/Chinchoo-112161053502961",
-      "type": 302
-    }
+        "source": "/facebook",
+        "destination": "https://www.facebook.com/Chinchoo-112161053502961",
+        "type": 302
+      },
+      {
+        "source": "/tournaments/CT1",
+        "destination": "https://docs.google.com/spreadsheets/d/14z-paon-gwYrDF2KysOVu2llG894KEkeOqemh5-jEbM/edit",
+        "type": 302
+      },
+      {
+        "source": "/tournaments/CT2",
+        "destination": "https://docs.google.com/spreadsheets/d/15SrnE5vLWdD4LLMKf_MpPfYXkKE9yDDMf1hIlerOeM0/edit",
+        "type": 302
+      },
+      {
+        "source": "/tournaments/CST",
+        "destination": "https://docs.google.com/spreadsheets/d/11iBFFZUnJKOp8zNc9-v8tTNbP_qj73_HQ79haGkJIi4/edit",
+        "type": 302
+      }
     ]
   }
 }

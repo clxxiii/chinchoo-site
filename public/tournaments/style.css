@@ -1,0 +1,29 @@
+.tourney-box {
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.tourney img {
+    width: 250px;
+    height: 250px;
+}
+
+.tourney {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    font-family: 'Varela Round';
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.1s ease-in-out;
+}
+
+.tourney:hover {
+    background-color: rgba(0, 0, 0, 0.75);
+    transform: rotate(-5deg) scale(1.05);
+}
