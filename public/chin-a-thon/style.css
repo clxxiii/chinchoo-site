@@ -1,220 +1,224 @@
 @import url("https://fonts.googleapis.com/css2?family=Jura:wght@300&family=Poiret+One&family=Varela+Round&display=swap");
 
 .bg {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background-size: cover;
-	background-position: center;
-	background-image: url("../src/bg.png");
-	filter: blur(20px);
-	transform: scale(1.1);
-	z-index: -1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../src/bg.png");
+  filter: blur(5px);
+  transform: scale(1.1);
+  z-index: -1;
 }
 
 body {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	font-family: "Varela Round";
-	color: white;
-	font-size: 1rem;
-	margin: 0;
-	padding: 0;
-	width: 100%;
-	height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Varela Round", sans-serif;
+  color: white;
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .card {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	height: 30rem;
-	width: 20rem;
-	text-align: center;
-	align-items: center;
-	background-color: rgba(0, 0, 0, 0.5);
-	backdrop-filter: blur(10px);
-	padding: 15px;
-	border-radius: 20px;
-	box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 30rem;
+  width: 20rem;
+  text-align: center;
+  align-items: center;
+  border: solid 2px rgba(255, 255, 255, 0.1);
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(20px);
+  padding: 15px;
+  border-radius: 20px;
 }
 
 h1 {
-	font-size: 3rem;
-	font-family: Jura, sans-serif;
-	font-weight: bold;
+  font-size: 3rem;
+  font-family: Jura, sans-serif;
+  font-weight: bold;
 }
 
 h2 {
-	font-size: 2.5rem;
-	margin: 0;
-	font-family: Jura, sans-serif;
-	font-weight: bold;
+  font-size: 2.5rem;
+  margin: 0;
+  font-family: Jura, sans-serif;
+  font-weight: bold;
 }
 
 .heading {
-	width: 100%;
-	text-align: center;
-	font-size: 3rem;
-	font-family: Jura, sans-serif;
-	font-weight: bold;
+  width: 100%;
+  text-align: center;
+  font-size: 3rem;
+  font-family: Jura, sans-serif;
+  font-weight: bold;
 }
 
 .card h2 {
-	position: absolute;
-	width: 100%;
-	top: 0;
-	left: 0;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
 }
 
 table td {
-	width: 10rem;
-	text-align: start;
+  width: 10rem;
+  text-align: start;
 }
 
 table td:nth-child(2) {
-	text-align: end;
-	font-weight: bold;
+  text-align: end;
+  font-weight: bold;
 }
 
 table.goals td:nth-child(1) {
-	width: 5.5rem;
-	transform: translateY(2px);
+  width: 5.5rem;
+  transform: translateY(2px);
 }
 
 table.goals td:nth-child(2) {
-	width: 14.5rem;
-	font-size: 0.75rem;
+  width: 14.5rem;
+  font-size: 0.75rem;
 }
 
 td {
-	height: 1.5rem;
+  height: 1.5rem;
 }
 
 .card-box {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	gap: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
 }
 
 .card .footer {
-	position: absolute;
-	bottom: 10px;
-	left: 0;
-	width: 100%;
-	text-align: center;
-	font-size: 0.75rem;
-	font-family: Jura, sans-serif;
-	font-weight: bold;
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 0.75rem;
+  font-family: Jura, sans-serif;
+  font-weight: bold;
 }
 
 .footer {
-	width: 100%;
-	margin-top: 50px;
-	text-align: center;
-	font-size: 2rem;
+  width: 100%;
+  margin-top: 50px;
+  text-align: center;
+  font-size: 2rem;
+}
+
+td a {
+  text-decoration: underline;
 }
 
 a {
-	position: relative;
-	text-decoration: none;
-	color: white;
+  position: relative;
+  text-decoration: none;
+  color: white;
 }
 
 .card ul {
-	font-size: 1.25rem;
+  font-size: 1.25rem;
 }
 .card ul li {
-	margin: 1rem 0;
+  margin: 1rem 0;
 }
 
 .underline::after {
-	content: "";
-	position: absolute;
-	bottom: 0px;
-	right: -3px;
-	border-radius: 5px;
-	padding: 0px 3px;
-	width: 100%;
-	backdrop-filter: grayscale(1) contrast(3) invert(100);
-	height: 2px;
-	transition: height 400ms ease-in-out;
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  right: -3px;
+  border-radius: 5px;
+  padding: 0px 3px;
+  width: 100%;
+  backdrop-filter: grayscale(1) contrast(3) invert(100);
+  height: 2px;
+  transition: height 400ms ease-in-out;
 }
 
 .underline:hover::after {
-	height: 100%;
+  height: 100%;
 }
 
 .timer {
-	font-size: 1.5rem;
-	margin-bottom: 2rem;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 @media screen and (max-width: 600px) {
-	h1,
-	.footer {
-		font-size: 1.5rem;
-	}
+  h1,
+  .footer {
+    font-size: 1.5rem;
+  }
 
-	.card {
-		height: 20rem;
-	}
+  .card {
+    height: 20rem;
+  }
 
-	.card table td {
-		height: 1rem;
-	}
+  .card table td {
+    height: 1rem;
+  }
 
-	.card ul li {
-		margin: 0rem 0;
-	}
+  .card ul li {
+    margin: 0rem 0;
+  }
 
-	.card-box {
-		flex-direction: column;
-	}
+  .card-box {
+    flex-direction: column;
+  }
 
-	.card h1 {
-		font-size: 2rem;
-	}
+  .card h1 {
+    font-size: 2rem;
+  }
 }
 
 .done {
-	position: relative;
-	color: rgba(200, 255, 200);
-	animation: crossout 1s ease-in-out;
+  position: relative;
+  color: rgba(200, 255, 200);
+  animation: crossout 1s ease-in-out;
 }
 
 .done::after {
-	content: "";
-	position: absolute;
-	background-color: rgba(200, 255, 200);
-	top: 50%;
-	left: 0;
-	width: 100%;
-	height: 2px;
-	animation: crossout-after 1s ease-in-out;
+  content: "";
+  position: absolute;
+  background-color: rgba(200, 255, 200);
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  animation: crossout-after 1s ease-in-out;
 }
 
 @keyframes crossout-after {
-	from {
-		background-color: rgba(255, 255, 255);
-		width: 0%;
-	}
-	to {
-		background-color: rgba(200, 255, 200);
-		width: 100%;
-	}
+  from {
+    background-color: rgba(255, 255, 255);
+    width: 0%;
+  }
+  to {
+    background-color: rgba(200, 255, 200);
+    width: 100%;
+  }
 }
 
 @keyframes crossout {
-	from {
-		color: rgba(255, 255, 255);
-	}
-	to {
-		color: rgba(200, 255, 200);
-	}
+  from {
+    color: rgba(255, 255, 255);
+  }
+  to {
+    color: rgba(200, 255, 200);
+  }
 }
