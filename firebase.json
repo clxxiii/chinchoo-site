@@ -1,11 +1,7 @@
 {
   "hosting": {
     "public": "public",
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
-    ],
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
     "redirects": [
       {
         "source": "/skins",
@@ -75,6 +71,11 @@
       {
         "source": "/facebook",
         "destination": "https://www.facebook.com/Chinchoo-112161053502961",
+        "type": 302
+      },
+      {
+        "source": "/throne",
+        "destination": "https://throne.com/chinchoo",
         "type": 302
       },
       {
